@@ -16,7 +16,5 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
-    mix.scripts([
-        "app.js"
-    ]);
+    mix.coffee();
 });

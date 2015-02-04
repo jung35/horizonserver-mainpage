@@ -879,7 +879,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5501,7 +5501,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5608,7 +5608,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6230,4 +6230,76 @@ body,
 label,
 .checkbox label {
   font-weight: 300;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: url('/img/background.png') no-repeat center center;
+  background-size: cover;
+}
+.navbar-default {
+  z-index: 99;
+  background: rgba(44, 44, 44, 0.7);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  border-color: #1e1e1e;
+  height: 160px;
+}
+.navbar-default .navbar-brand {
+  margin-top: 35px;
+}
+.navbar-default .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.6);
+  margin-top: 60px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: rgba(255, 255, 255, 0.6);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background: rgba(255, 255, 255, 0.9);
+}
+.navbar-default .navbar-collapse {
+  border-color: #1e1e1e;
+  margin-top: 55px;
+  background: rgba(44, 44, 44, 0.7);
+}
+.navbar-default .navbar-collapse li:hover a,
+.navbar-default .navbar-collapse li.active a,
+.navbar-default .navbar-collapse li.active:hover a {
+  background: transparent;
+  color: #fff;
+}
+.navbar-default .navbar-collapse li a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.3em;
+  font-weight: normal;
+}
+.maincontent {
+  background: rgba(44, 44, 44, 0.7);
+  border: 1px solid #1e1e1e;
+}
+.wrap {
+  min-height: 100%;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+.pushfooter {
+  height: 60px;
+}
+.footer {
+  height: 60px;
+  background: #191919;
+}
+.footer p {
+  color: #fff;
+  padding: 20px 0 0;
 }
