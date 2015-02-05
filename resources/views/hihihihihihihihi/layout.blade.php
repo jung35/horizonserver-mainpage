@@ -17,17 +17,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="/img/logo.png"></a>
+              <a class="navbar-brand" href="{!! URL::route('home') !!}"><img src="/img/logo.png"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Servers</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">Giveaway</a></li>
-                <li><a href="#">Donate</a></li>
+                <li class="active"><a href="{!! URL::route('home') !!}">Home</a></li>
+                <li><a href="http://www.horizonservers.net/home">Forum</a></li>
+                <li><a href="{!! URL::route('servers') !!}">Servers</a></li>
+                <li><a href="{!! URL::route('stats') !!}">Stats</a></li>
+                <li><a href="{!! URL::route('giveaway') !!}">Giveaway</a></li>
+                <li><a href="http://www.horizonservers.net/donate">Donate</a></li>
               </ul>
             </div>
           </div>
@@ -35,10 +35,8 @@
 
         <div class="container">
             <div class="maincontent">
-                <div class="row">
-                    @section('content')
-                    @show
-                </div>
+                @section('content')
+                @show
             </div>
         </div>
 

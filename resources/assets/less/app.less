@@ -8,7 +8,7 @@ body, label, .checkbox label {
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -33,6 +33,7 @@ body {
             .icon-bar {
                 background: rgba(255, 255, 255, .9);
             }
+
             border-color: rgba(255, 255, 255, .9);
             background: rgba(255, 255, 255, .1)
         }
@@ -43,7 +44,7 @@ body {
 
     .navbar-collapse {
         li {
-            &:hover, &.active, &.active:hover {
+            &:hover, &:focus, &.active, &.active:hover {
                 a {
                     background: transparent;
                     color: #fff;
@@ -58,7 +59,7 @@ body {
 
         border-color: #1e1e1e;
         margin-top: 55px;
-        background: rgba(44, 44, 44, .7);
+        background: rgba(44, 44, 44, 1);
     }
 
     z-index: 99;
@@ -71,6 +72,67 @@ body {
 }
 
 .maincontent {
+    .title {
+        margin: 0 0 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .content {
+        p {
+            a {
+                color: #d91f26;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            font-size: 1.2em;
+        }
+        color: #fff;
+    }
+
+    .btn-custom {
+        &:hover {
+            background: rgba(255, 255, 255, .2);
+            border: 1px solid rgba(255, 255, 255, .8);
+        }
+
+        display: block;
+        color: #fff;
+        background: rgba(255, 255, 255, .05);
+        border: 1px solid rgba(255, 255, 255, .4);
+        border-radius: 0;
+        font-size: 1.3em;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .table-responsive {
+        border: 0;
+    }
+
+    table {
+        tr td {
+            padding: 2px 0;
+            border: 0;
+        }
+
+        margin: auto;
+        max-width: 300px;
+        font-size: 1.3em;
+    }
+
+    .donator {
+        .amount {
+            width: 80px;
+        }
+        .number {
+            width: 30px;
+        }
+    }
+
+    padding: 20px;
     background: rgba(44, 44, 44, .7);
     border: 1px solid #1e1e1e;
 }
@@ -78,10 +140,11 @@ body {
 .wrap {
     min-height: 100%;
     height: 100%;
-    margin: 0 auto -60px;
+    margin: 0 auto -80px;
 }
+
 .pushfooter {
-    height: 60px;
+    height: 80px;
 }
 
 .footer {
@@ -89,6 +152,57 @@ body {
         color: #fff;
         padding: 20px 0 0;
     }
+
+    margin-top: 20px;
     height: 60px;
     background: #191919;
+}
+
+@media (max-width: @screen-sm-max) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        &.collapse {
+            display: none !important;
+        }
+
+        &.collapse.in {
+            display: block !important;
+        }
+
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    }
+
+    .navbar-nav {
+        & > li {
+            & > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            float: none;
+        }
+
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+    .collapsing {
+        overflow: hidden !important;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .navbar-default {
+        .navbar-collapse {
+            background: transparent;
+        }
+    }
 }

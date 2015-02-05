@@ -20,7 +20,25 @@
 // 	'password' => 'Auth\PasswordController',
 // ]);
 
-Route::get('/', function()
+Route::get('/', array('as' => 'home', function()
 {
-    return view('hihihihihihihihi/layout');
-});
+    return view('hihihihihihihihi/pages/home');
+}));
+
+
+Route::get('/servers', array('as' => 'servers', function()
+{
+    return view('hihihihihihihihi/pages/servers');
+}));
+
+
+Route::get('/stats', array('as' => 'stats', function()
+{
+    return view('hihihihihihihihi/pages/home');
+}));
+
+
+Route::get('/giveaway', array('as' => 'giveaway', function()
+{
+    return view('hihihihihihihihi/pages/home');
+}));
