@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="steps-to-enter">
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
             <h3 class="title">Steps to enter:</h3>
             <ol>
                 <li class="inc">
@@ -46,9 +46,9 @@
             <p><small><strong>When completed, please refresh the page once again.</strong></small></p>
         </div>
         <div class="col-xs-12">
-            <div class="text-center"><img src="http://i.imgur.com/pRRJjKz.png"></div>
+            <div class="text-center"><img class="img-responsive" src="http://i.imgur.com/pRRJjKz.png"></div>
         </div>
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p>The winner will be choosen randomly by our random number generator system.</p>
             <p>Since this wouldn't be possible without our donators, we decided to give them some extra luck.</p>
             <ul>

@@ -6515,7 +6515,7 @@ hr {
   font-family: Arial Unicode MS,Lucida Grande;
   margin-right: 8px;
 }
-.steps-to-enter li:before {
+.steps-to-enter ol li:before {
   content: "\2714";
   color: #38BB38;
   text-shadow: 0 0 1px #38BB38;
