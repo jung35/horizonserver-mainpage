@@ -6485,6 +6485,56 @@ body {
 .player_stats .map-completed-details .comp {
   width: 93px;
 }
+hr {
+  border-top: 5px solid rgba(255, 255, 255, 0.3);
+}
+.this-month-giveaway {
+  display: inline-block;
+}
+.this-month-giveaway h3 {
+  margin: 0 0 20px;
+}
+.steps-to-enter h3.title {
+  margin: 10px 0;
+  font-weight: 400;
+}
+.steps-to-enter ol {
+  padding: 0 0 0 12px;
+  margin: 0;
+  list-style: none;
+  font-size: 1.2em;
+}
+.steps-to-enter ol a {
+  color: white;
+}
+.steps-to-enter .inc:before {
+  content: "\2718";
+  color: red;
+  text-shadow: 0 0 1px red;
+  display: inline-block;
+  font-family: Arial Unicode MS,Lucida Grande;
+  margin-right: 8px;
+}
+.steps-to-enter li:before {
+  content: "\2714";
+  color: #38BB38;
+  text-shadow: 0 0 1px #38BB38;
+  display: inline-block;
+  font-family: Arial Unicode MS,Lucida Grande;
+  margin-right: 8px;
+}
+.steps-to-enter p {
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+.steps-to-enter ul {
+  font-size: 1.3em;
+}
+.steps-to-enter ul a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #d91f26;
+}
 @media (max-width: 991px) {
   .navbar-header {
     float: none;

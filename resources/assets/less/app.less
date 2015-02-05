@@ -309,6 +309,66 @@ body {
     margin: auto;
 }
 
+hr {
+    border-top: 5px solid rgba(255, 255, 255, .3);
+}
+
+.this-month-giveaway {
+    h3 {
+        margin: 0 0 20px;
+    }
+    display: inline-block;
+}
+
+.steps-to-enter {
+    h3.title {
+        margin: 10px 0;
+        font-weight: 400;
+    }
+    ol {
+        a {
+            color: white;
+        }
+
+        padding: 0 0 0 12px;
+        margin: 0;
+        list-style: none;
+        font-size: 1.2em;
+    }
+
+    .inc:before {
+        content: "\2718";
+        color: red;
+        text-shadow: 0 0 1px red;
+        display: inline-block;
+        font-family: Arial Unicode MS,Lucida Grande;
+        margin-right: 8px;
+    }
+
+    li:before {
+        content: "\2714";
+        color: #38BB38;
+        text-shadow: 0 0 1px #38BB38;
+        display: inline-block;
+        font-family: Arial Unicode MS,Lucida Grande;
+        margin-right: 8px;
+    }
+
+    p {
+        padding-top: 10px;
+        font-size: 1.3em;
+    }
+
+    ul {
+        a {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #d91f26;
+        }
+        font-size: 1.3em;
+    }
+}
+
 @media (max-width: @screen-sm-max) {
     .navbar-header {
         float: none;

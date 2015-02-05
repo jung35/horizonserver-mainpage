@@ -208,5 +208,5 @@ Route::get('/stats', array('as' => 'stats', function()
 
 Route::get('/giveaway', array('as' => 'giveaway', function()
 {
-    return view('hihihihihihihihi/pages/home');
+    return view('hihihihihihihihi/pages/giveaway');
 }));
