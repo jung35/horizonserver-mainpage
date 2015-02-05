@@ -12,11 +12,8 @@ html, body {
 }
 
 body {
-    background: url('/img/background.png') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    color: white;
+    background: url('/img/background.png') no-repeat center center fixed;
 }
 
 .navbar-default {
@@ -112,7 +109,7 @@ body {
         border: 0;
     }
 
-    table {
+    .donator {
         tr td {
             padding: 2px 0;
             border: 0;
@@ -192,6 +189,126 @@ body {
     background: #191919;
 }
 
+.player_stats {
+    .form-group, .input-group {
+        width: 100%;
+    }
+
+    .input-group {
+        .input-group-addon, .form-control {
+            border: 0;
+        }
+
+        .input-group-addon, .form-control, .btn-search {
+            background: rgba(255, 255, 255, .15);
+            border-radius: 0;
+            color: #fff;
+        }
+
+        .input-group-addon {
+            width: 165px;
+        }
+
+        .input-group-btn {
+            width: 70px;
+            border: 0;
+        }
+
+        .btn-search {
+            width: 100%;
+            margin: 0;
+            border-color: transparent;
+            border-left: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        border: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .server-ranking {
+        small {
+            font-size: .8em;
+            color: rgba(255, 255, 255, .6);
+        }
+
+        line-height: 90%;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 20px 0 30px;
+    }
+
+    .avatar {
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+        }
+        padding: 0 0 20px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .details {
+        .data {
+            padding: 0 0 20px;
+        }
+        font-size: 1.2em;
+    }
+
+    h2 {
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+    }
+
+    .map-completed-details {
+        table {
+            border: 1px solid #1A1918;
+        }
+
+        tr {
+            th, td {
+                border: 0;
+            }
+
+            th {
+                background: #242321;
+            }
+
+            &:hover {
+                &:nth-child(odd) {
+                    background: rgba(0, 0, 0, .2);
+                }
+                background: transparent;
+            }
+
+            &:nth-child(odd) {
+                background: rgba(0, 0, 0, .1);
+            }
+
+            background: rgba(255, 255, 255, .03);
+        }
+
+        .tier, .time {
+            text-align: center;
+        }
+
+        .tier {
+            width: 55px;
+        }
+
+        .time, .rank {
+            width: 70px;
+        }
+
+        .comp {
+            width: 93px;
+        }
+    }
+
+    max-width: 900px;
+    margin: auto;
+}
+
 @media (max-width: @screen-sm-max) {
     .navbar-header {
         float: none;
@@ -233,6 +350,24 @@ body {
     }
 }
 
+@media (min-width: @screen-sm-min) {
+    .player_stats {
+        .userinfo {
+            padding: 30px 0 0;
+        }
+
+        .server-ranking, .avatar {
+            padding: 0 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .title {
+            margin-top: 30px;
+        }
+    }
+}
+
 @media (min-width: @screen-md-min) {
     .navbar-default {
         .navbar-collapse {
@@ -244,5 +379,54 @@ body {
         .btn-custom {
             margin-top: 20px;
         }
+    }
+
+    .player_stats {
+        .userinfo {
+            padding: 30px 0 0;
+        }
+
+        .server-ranking, .avatar {
+            padding: 0 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .title {
+            margin: 0 0 20px;
+            text-align: left;
+        }
+
+        .details {
+            .type, .data {
+                display: inline-block;
+            }
+
+            .type {
+                width: 100px;
+                text-align: right;
+            }
+
+            .data {
+                padding: 0 0 0 10px;
+            }
+
+            text-align: left;
+            font-weight: bold;
+            color: #ccc;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .player_stats .input-group .input-group-addon {
+        width: 75px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
     }
 }

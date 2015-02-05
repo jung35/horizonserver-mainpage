@@ -6236,8 +6236,8 @@ body {
   min-height: 100%;
 }
 body {
-  background: url('/img/background.png') no-repeat center center;
-  background-size: cover;
+  color: white;
+  background: url('/img/background.png') no-repeat center center fixed;
 }
 .navbar-default {
   z-index: 99;
@@ -6323,12 +6323,12 @@ body {
 .maincontent .table-responsive {
   border: 0;
 }
-.maincontent table {
+.maincontent .donator {
   margin: auto;
   max-width: 300px;
   font-size: 1.3em;
 }
-.maincontent table tr td {
+.maincontent .donator tr td {
   padding: 2px 0;
   border: 0;
 }
@@ -6384,6 +6384,107 @@ body {
   color: #fff;
   padding: 20px 0 0;
 }
+.player_stats {
+  max-width: 900px;
+  margin: auto;
+}
+.player_stats .form-group,
+.player_stats .input-group {
+  width: 100%;
+}
+.player_stats .input-group {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.player_stats .input-group .input-group-addon,
+.player_stats .input-group .form-control {
+  border: 0;
+}
+.player_stats .input-group .input-group-addon,
+.player_stats .input-group .form-control,
+.player_stats .input-group .btn-search {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  color: #fff;
+}
+.player_stats .input-group .input-group-addon {
+  width: 165px;
+}
+.player_stats .input-group .input-group-btn {
+  width: 70px;
+  border: 0;
+}
+.player_stats .input-group .btn-search {
+  width: 100%;
+  margin: 0;
+  border-color: transparent;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.player_stats .server-ranking {
+  line-height: 90%;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px 0 30px;
+}
+.player_stats .server-ranking small {
+  font-size: .8em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.player_stats .avatar {
+  padding: 0 0 20px;
+}
+.player_stats .avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}
+.player_stats .title {
+  font-size: 2em;
+}
+.player_stats .details {
+  font-size: 1.2em;
+}
+.player_stats .details .data {
+  padding: 0 0 20px;
+}
+.player_stats h2 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.player_stats .map-completed-details table {
+  border: 1px solid #1A1918;
+}
+.player_stats .map-completed-details tr {
+  background: rgba(255, 255, 255, 0.03);
+}
+.player_stats .map-completed-details tr th,
+.player_stats .map-completed-details tr td {
+  border: 0;
+}
+.player_stats .map-completed-details tr th {
+  background: #242321;
+}
+.player_stats .map-completed-details tr:hover {
+  background: transparent;
+}
+.player_stats .map-completed-details tr:hover:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.2);
+}
+.player_stats .map-completed-details tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.1);
+}
+.player_stats .map-completed-details .tier,
+.player_stats .map-completed-details .time {
+  text-align: center;
+}
+.player_stats .map-completed-details .tier {
+  width: 55px;
+}
+.player_stats .map-completed-details .time,
+.player_stats .map-completed-details .rank {
+  width: 70px;
+}
+.player_stats .map-completed-details .comp {
+  width: 93px;
+}
 @media (max-width: 991px) {
   .navbar-header {
     float: none;
@@ -6416,11 +6517,64 @@ body {
     overflow: hidden !important;
   }
 }
+@media (min-width: 768px) {
+  .player_stats .userinfo {
+    padding: 30px 0 0;
+  }
+  .player_stats .server-ranking,
+  .player_stats .avatar {
+    padding: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .player_stats .title {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 992px) {
   .navbar-default .navbar-collapse {
     background: transparent;
   }
   .servers .btn-custom {
     margin-top: 20px;
+  }
+  .player_stats .userinfo {
+    padding: 30px 0 0;
+  }
+  .player_stats .server-ranking,
+  .player_stats .avatar {
+    padding: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .player_stats .title {
+    margin: 0 0 20px;
+    text-align: left;
+  }
+  .player_stats .details {
+    text-align: left;
+    font-weight: bold;
+    color: #ccc;
+  }
+  .player_stats .details .type,
+  .player_stats .details .data {
+    display: inline-block;
+  }
+  .player_stats .details .type {
+    width: 100px;
+    text-align: right;
+  }
+  .player_stats .details .data {
+    padding: 0 0 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  .player_stats .input-group .input-group-addon {
+    width: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
   }
 }
