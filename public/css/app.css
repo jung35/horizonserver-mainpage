@@ -6338,6 +6338,35 @@ body {
 .maincontent .donator .number {
   width: 30px;
 }
+.servers {
+  color: white;
+}
+.servers .item {
+  padding: 20px 0 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+.servers .small-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.servers img {
+  margin: 0 0 10px;
+}
+.servers .desc {
+  font-size: 1.2em;
+}
+.ranks {
+  color: white;
+  background: #242424;
+  font-size: 1.2em;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+.ranks li {
+  padding: 5px 0;
+  text-shadow: 2px 2px 4px #000000;
+}
 .wrap {
   min-height: 100%;
   height: 100%;
@@ -6390,5 +6419,8 @@ body {
 @media (min-width: 992px) {
   .navbar-default .navbar-collapse {
     background: transparent;
+  }
+  .servers .btn-custom {
+    margin-top: 20px;
   }
 }
